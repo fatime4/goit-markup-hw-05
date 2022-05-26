@@ -85,7 +85,7 @@ img {
 
 .nav-container .contact-list {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   margin-left: auto;
 }
 
@@ -138,7 +138,8 @@ img {
 }
 
 .nav-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   color: var(--title-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -220,6 +221,8 @@ img {
   max-width: 1600px;
   background-position: center;
   background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .baner-button {
@@ -266,7 +269,10 @@ img {
 }
 
 .benefits-icon-box {
-  padding: 25px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: var(--primary-background-color);
@@ -327,8 +333,10 @@ img {
 }
 
 .team-border-box {
+  background-color: var(--primary-white-color);
   padding-top: 30px;
   padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .border-box {
@@ -357,7 +365,8 @@ img {
   color: var(--icon-current-color);
 }
 
-.socials-link:hover {
+.socials-link:hover,
+.socials-link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
@@ -389,7 +398,8 @@ img {
   border-radius: 5px;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -409,6 +419,7 @@ img {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer .logo {
@@ -446,10 +457,7 @@ img {
 }
 
 .footer-socials {
-  display: inline-block;
   margin-left: 70px;
-  padding-top: 12px;
-  width: 206px;
 }
 
 .footer-title {
@@ -471,7 +479,8 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer .socials-link:hover {
+.footer .socials-link:hover,
+.footer .socials-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -522,8 +531,8 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.poftfolio-list .section-item:hover {
-  border: 1px solid #eeeeee inset;
+.poftfolio-list .item:hover,
+.poftfolio-list .item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -536,6 +545,7 @@ img {
 
 .item {
   text-decoration: none;
+  display: block;
 }
 
 .card-title {
